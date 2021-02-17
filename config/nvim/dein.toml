@@ -1,0 +1,57 @@
+# ### dein ###
+[[plugins]]
+repo = 'Shougo/dein.vim'
+# denite
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+# ### coc ###
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+if = '''executable('node') && executable('yarn')'''
+build = './install.sh nightly'
+hook_add = '''
+source ~/.config/nvim/plugins/coc.vim
+source ~/.config/nvim/plugins/coc_extensions.vim
+'''
+
+# ### 見た目 ###
+# icon
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+# カラースキーム
+[[plugins]]
+repo = 'morhetz/gruvbox'
+# lightline
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = '''source ~/.config/nvim/plugins/lightline.vim'''
+# Indent Guides
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_add = '''source ~/.config/nvim/plugins/vim-indent-guides.vim'''
+
+# ### 操作 ###
+# ツリー型のファイル表示
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''source ~/.config/nvim/plugins/nerd-tree.vim'''
+# nerdtreeのgit
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+# nerdtreeのhiglight
+[[plugins]]
+repo = "tiagofumo/vim-nerdtree-syntax-highlight"
+hook_add = '''source ~/.config/nvim/plugins/vim-nerdtree-syntax-highlight.vim'''
+# 括弧補完
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
+# ### Git関連 ###
+# Git操作
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+# 差分表示
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''source ~/.config/nvim/plugins/vim-gitgutter.vim'''
+
