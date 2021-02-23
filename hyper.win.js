@@ -194,7 +194,9 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hypercwd',
+    // Disable Windows
+    // cf. https://github.com/vercel/hyper/issues/4611
+    //'hypercwd',
     'hyper-material-theme',
     'hyper-tabs-enhanced',
     "hyperline",
