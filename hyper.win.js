@@ -12,8 +12,9 @@ module.exports = {
     fontSize: 16,
 
     // font family with optional fallbacks
+    // https://github.com/edihbrandon/RictyDiminished
     // https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono
-    fontFamily: 'Ricty, "JetBrainsMono Nerd Font", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'Ricty Diminished, "JetBrainsMono NF", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
