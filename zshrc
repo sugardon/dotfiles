@@ -34,15 +34,15 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
 
 # === Load ===
-## local config
-source $HOME/.zshrc-local.zsh
+## Dev Tools
+source $HOME/.zsh/devtools/devtools.zsh
 ## Basic config
 source $HOME/.zsh/key-bindings.zsh
 source $HOME/.zsh/options.zsh
 source $HOME/.zsh/aliases.zsh
 source $HOME/.zsh/auto-title.zsh
-## programming environment
-source $HOME/.zsh/nvm.zsh
+## local config
+source $HOME/.zshrc-local.zsh
 
 # === starship prompt ===
 export STARSHIP_CONFIG="$HOME/.zsh/starship.toml"
