@@ -12,6 +12,10 @@ fi
 ### Enhanced form of menu completion called `menu selection'
 zmodload -i zsh/complist
 
+# additional path
+## local
+export PATH="$HOME/local/bin:$PATH"
+
 # === Plugins ===
 source $HOME/.zsh/plugins/ohmyzsh/lib/history.zsh
 source $HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
