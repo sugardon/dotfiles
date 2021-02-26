@@ -9,4 +9,5 @@ let g:coc_global_extensions = [
 \ 'coc-eslint',
 \ 'coc-prettier',
 \ 'coc-yaml',
+\ 'coc-markdownlint',
 \ ]
