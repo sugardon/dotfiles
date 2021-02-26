@@ -5,10 +5,12 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 # ### coc ###
+# https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#using-deinvim
 [[plugins]]
 repo = 'neoclide/coc.nvim'
-if = '''executable('node') && executable('yarn')'''
-build = './install.sh nightly'
+merged = 0
+rev = 'master'
+build = 'yarn install --frozen-lockfile'
 hook_add = '''
 source ~/.config/nvim/plugins/coc.vim
 source ~/.config/nvim/plugins/coc_extensions.vim
