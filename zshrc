@@ -17,17 +17,13 @@ zmodload -i zsh/complist
 export PATH="$HOME/local/bin:$PATH"
 
 # === Plugins ===
-source $HOME/.zsh/plugins/ohmyzsh/lib/history.zsh
-source $HOME/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $HOME/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $HOME/.zsh/zinit-conf.zsh
 
 # === Completion ==
 ## completion with sourcd
 source $HOME/.zsh/completions/completion.zsh
 ## completion with file
 fpath=(~/.zsh/completions/ $fpath)
-## Just use completion setting
-source $HOME/.zsh/plugins/ohmyzsh/lib/completion.zsh
 
 # === other settings ===
 export XDG_CONFIG_HOME="$HOME/.config"
