@@ -20,10 +20,6 @@ alias rm='rm -i'
 alias cp='cp -i'
 # confirm move
 alias mv='mv -i'
-# print simple calendar for current month
-alias cal='gcal --starting-day=1'
-# print weather for current location (https://github.com/chubin/wttr.in)
-alias weather='curl v2.wttr.in'
 
 # use nvim
 alias vim='nvim'
