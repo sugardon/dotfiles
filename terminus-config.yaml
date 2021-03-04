@@ -1,0 +1,100 @@
+terminal:
+  searchOptions: {}
+  colorScheme:
+    name: Atom
+    foreground: '#c5c8c6'
+    background: '#161719'
+    cursor: '#0095e1'
+    colors:
+      - '#000000'
+      - '#fd5ff1'
+      - '#87c38a'
+      - '#ffd7b1'
+      - '#85befd'
+      - '#b9b6fc'
+      - '#85befd'
+      - '#e0e0e0'
+      - '#6b6b6b'
+      - '#fd5ff1'
+      - '#94fa36'
+      - '#f5ffa8'
+      - '#96cbfe'
+      - '#b9b6fc'
+      - '#85befd'
+      - '#e0e0e0'
+  environment: {}
+  profile: zsh
+  font: Ricty
+  cursorBlink: false
+  bell: 'off'
+  fallbackFont: JetBrainsMono Nerd Font
+  fontSize: 16
+  alwaysUseWorkingDirectory: false
+  workingDirectory: /Users/kenta_gotou
+  background: theme
+  customColorSchemes:
+    - name: Atom
+      foreground: '#c5c8c6'
+      background: '#161719'
+      cursor: '#0095e1'
+      colors:
+        - '#000000'
+        - '#fd5ff1'
+        - '#87c38a'
+        - '#ffd7b1'
+        - '#85befd'
+        - '#b9b6fc'
+        - '#85befd'
+        - '#e0e0e0'
+        - '#6b6b6b'
+        - '#fd5ff1'
+        - '#94fa36'
+        - '#f5ffa8'
+        - '#96cbfe'
+        - '#b9b6fc'
+        - '#85befd'
+        - '#e0e0e0'
+  ligatures: false
+hotkeys:
+  shell: {}
+  profile: {}
+  new-tab:
+    - - ⌘-Shift-T
+    - - Ctrl-⌘-T
+  move-tab-left: []
+  move-tab-right: []
+  close-tab:
+    - - ⌘-Shift-C
+  next-tab:
+    - - ⌘-Shift-L
+  previous-tab:
+    - - ⌘-Shift-H
+  split-right:
+    - - Ctrl-⌘-S
+  split-bottom:
+    - - ⌘-Shift-S
+  pane-nav-left:
+    - - Ctrl-⌘-H
+  pane-nav-right:
+    - - Ctrl-⌘-L
+  pane-nav-down:
+    - - Ctrl-⌘-J
+  pane-nav-up:
+    - - Ctrl-⌘-K
+  close-pane:
+    - - Ctrl-⌘-C
+  reopen-tab:
+    - - ⌘-Shift-B
+  toggle-last-tab:
+    - - ⌘-Shift-R
+  rename-tab: []
+serial: {}
+ssh: {}
+appearance:
+  theme: Standard
+  opacity: 1
+  frame: thin
+  vibrancy: false
+enableAnalytics: false
+pluginBlacklist: []
+enableWelcomeTab: false
