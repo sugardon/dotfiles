@@ -30,7 +30,6 @@ terminal:
   fallbackFont: JetBrainsMono Nerd Font
   fontSize: 16
   alwaysUseWorkingDirectory: false
-  workingDirectory: /Users/kenta_gotou
   background: theme
   customColorSchemes:
     - name: Atom
