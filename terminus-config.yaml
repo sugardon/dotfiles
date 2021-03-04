@@ -59,9 +59,10 @@ hotkeys:
   profile: {}
   new-tab:
     - - ⌘-Shift-T
-    - - Ctrl-⌘-T
-  move-tab-left: []
-  move-tab-right: []
+  move-tab-left:
+    - - ⌘-Shift-Left
+  move-tab-right:
+    - - ⌘-Shift-Right
   close-tab:
     - - ⌘-Shift-C
   next-tab:
