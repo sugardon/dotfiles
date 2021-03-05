@@ -1,7 +1,7 @@
 terminal:
   searchOptions: {}
   colorScheme:
-    name: Atom
+    name: Atom-custom
     foreground: '#c5c8c6'
     background: '#161719'
     cursor: '#0095e1'
@@ -24,7 +24,7 @@ terminal:
       - '#e0e0e0'
   environment: {}
   profile: zsh
-  font: Ricty
+  font: Ricty Diminished
   cursorBlink: false
   bell: 'off'
   fallbackFont: JetBrainsMono Nerd Font
@@ -32,7 +32,7 @@ terminal:
   alwaysUseWorkingDirectory: false
   background: theme
   customColorSchemes:
-    - name: Atom
+    - name: Atom-custom
       foreground: '#c5c8c6'
       background: '#161719'
       cursor: '#0095e1'
@@ -54,6 +54,7 @@ terminal:
         - '#85befd'
         - '#e0e0e0'
   ligatures: false
+  frontend: xterm-webgl
 hotkeys:
   shell: {}
   profile: {}
