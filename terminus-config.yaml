@@ -60,34 +60,49 @@ hotkeys:
   profile: {}
   new-tab:
     - - ⌘-Shift-T
+    - - Alt-Shift-T
   move-tab-left:
     - - ⌘-Shift-Left
+    - - Alt-Shift-Left
   move-tab-right:
     - - ⌘-Shift-Right
+    - - Alt-Shift-Right
   close-tab:
     - - ⌘-Shift-C
+    - - Alt-Shift-C
   next-tab:
     - - ⌘-Shift-L
+    - - Alt-Shift-L
   previous-tab:
     - - ⌘-Shift-H
+    - - Alt-Shift-H
   split-right:
     - - Ctrl-⌘-S
+    - - Ctrl-Alt-S
   split-bottom:
     - - ⌘-Shift-S
+    - - Alt-Shift-S
   pane-nav-left:
     - - Ctrl-⌘-H
+    - - Ctrl-Alt-H
   pane-nav-right:
     - - Ctrl-⌘-L
+    - - Ctrl-Alt-L
   pane-nav-down:
     - - Ctrl-⌘-J
+    - - Ctrl-Alt-J
   pane-nav-up:
     - - Ctrl-⌘-K
+    - - Ctrl-Alt-K
   close-pane:
     - - Ctrl-⌘-C
+    - - Ctrl-Alt-C
   reopen-tab:
     - - ⌘-Shift-B
+    - - Alt-Shift-B
   toggle-last-tab:
     - - ⌘-Shift-R
+    - - Alt-Shift-R
   rename-tab: []
 serial: {}
 ssh: {}
