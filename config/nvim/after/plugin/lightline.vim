@@ -3,17 +3,20 @@ let g:lightline = {
         \ 'colorscheme': 'powerline',
         \ 'mode_map': {'c': 'NORMAL'},
         \ 'active': {
-        \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+        \   'left': [ 
+        \     [ 'mode', 'paste' ],
+        \     [ 'gitstatus', 'filename' ] 
+        \   ]
         \ },
         \ 'component_function': {
         \   'modified': 'LightlineModified',
         \   'readonly': 'LightlineReadonly',
-        \   'fugitive': 'LightlineFugitive',
         \   'filename': 'LightlineFilename',
         \   'fileformat': 'LightlineFileformat',
         \   'filetype': 'LightlineFiletype',
         \   'fileencoding': 'LightlineFileencoding',
-        \   'mode': 'LightlineMode'
+        \   'mode': 'LightlineMode',
+        \   'gitstatus': 'LightlineGitStatus',
         \ }
         \ }
 
@@ -34,12 +37,9 @@ function! LightlineFilename()
         \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
 endfunction
 
-function! LightlineFugitive()
-  if &ft !~? 'vimfiler\|gundo' && exists('*fugitive#head')
-    return ' '.fugitive#head()
-  else
-    return ''
-  endif
+function! LightlineGitStatus() abort
+  let status = get(g:, 'coc_git_status', '')
+  return status
 endfunction
 
 function! LightlineFileformat()
