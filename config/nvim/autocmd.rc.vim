@@ -1,3 +1,6 @@
+"jsx, tsxのファイルタイプを指定する
+autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx
+autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx
 
 augroup fileTypeIndent
     autocmd!

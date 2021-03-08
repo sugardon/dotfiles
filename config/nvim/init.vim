@@ -21,6 +21,9 @@ endif
 
 filetype plugin indent on
 
+" <leader>はspaceにする
+let mapleader = "\<Space>"
+
 " ### load ###
 runtime! ./vim-plug.vim
 runtime! ./options.rc.vim

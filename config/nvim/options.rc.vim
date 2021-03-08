@@ -68,6 +68,4 @@ set wrapscan
 "==その他==
 " terminalシェルの指定
 set sh=zsh
-"jsx, tsxのファイルタイプを指定する
-autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx
-autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx
+

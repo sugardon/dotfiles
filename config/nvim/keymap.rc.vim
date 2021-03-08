@@ -1,6 +1,3 @@
-" <leader>はspaceにする
-let mapleader = "\<Space>"
-
 " Ctrl + hjkl でウィンドウ間を移動
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
