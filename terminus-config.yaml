@@ -114,3 +114,4 @@ appearance:
 enableAnalytics: false
 pluginBlacklist: []
 enableWelcomeTab: false
+clickableLinks: {}
