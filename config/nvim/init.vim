@@ -22,15 +22,10 @@ endif
 filetype plugin indent on
 
 " ### load ###
+runtime! ./vim-plug.vim
 runtime! ./options.rc.vim
 runtime! ./keymap.rc.vim
 runtime! ./autocmd.rc.vim
-" dein(plugin) の読み込み
-runtime! ./dein.vim
-" deinで読み込んだカラースキーム
-colorscheme gruvbox 
-syntax enable
-
 runtime! ./functions.rc.vim
 
 
