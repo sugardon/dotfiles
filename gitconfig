@@ -1,0 +1,20 @@
+[alias]
+    graph = log --all --graph --oneline --decorate
+    s = status
+    unstage = reset HEAD
+[user]
+    name = sugardon
+    email = sugar2don@gmail.com
+    signingkey = 67F5823C44609CC1
+[commit]
+    gpgsign = true
+[tag]
+    gpgsign = true
+[push]
+    default = nothing
+[includeIf "gitdir:~/workspace/"]
+    path = ~/workspace/.gitconfig
+[diff "sopsdiffer"]
+    textconv = sops -d
+[credential]
+    helper = osxkeychain
