@@ -5,7 +5,7 @@
 [user]
     name = sugardon
     email = sugar2don@gmail.com
-    signingkey = 67F5823C44609CC1
+    signingkey = B0CB6D84ADDFDBB2
 [commit]
     gpgsign = true
 [tag]
