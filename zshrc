@@ -20,8 +20,6 @@ export PATH="$HOME/local/bin:$PATH"
 source $HOME/.zsh/zinit-conf.zsh
 
 # === Completion ==
-## completion with sourcd
-source $HOME/.zsh/completions/completion.zsh
 ## completion with file
 fpath=(~/.zsh/completions/ $fpath)
 
@@ -30,8 +28,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
 
 # === Load ===
-## Dev Tools
-source $HOME/.zsh/devtools/devtools.zsh
 ## Basic config
 source $HOME/.zsh/key-bindings.zsh
 source $HOME/.zsh/aliases.zsh
