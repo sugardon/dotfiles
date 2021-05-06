@@ -15,7 +15,7 @@ zinit light zsh-users/zsh-history-substring-search
 ## local plugins
 # cf. https://github.com/zdharma/zinit/issues/4#issuecomment-308037024
 zinit ice wait'!0' lucid
-zinit light $HOME/.zsh/completions/
+zinit light $HOME/.zsh/devtools
 
 zinit ice wait'!0' lucid
-zinit light $HOME/.zsh/devtools/
+zinit light $HOME/.zsh/completions

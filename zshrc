@@ -21,7 +21,7 @@ source $HOME/.zsh/zinit-conf.zsh
 
 # === Completion ==
 ## completion with file
-fpath=(~/.zsh/completions/ $fpath)
+fpath=(~/.zsh/fpath/ $fpath)
 
 # === other settings ===
 export XDG_CONFIG_HOME="$HOME/.config"
