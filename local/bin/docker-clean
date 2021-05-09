@@ -2,5 +2,5 @@
 
 set -ex
 
-docker rm $(docker ps -q -a)
+docker rm $(docker ps -q -a) || true
 docker image prune -a
