@@ -54,6 +54,10 @@ Plug 'cohama/lexima.vim'
 " https://github.com/dhruvasagar/vim-table-mode
 Plug 'dhruvasagar/vim-table-mode'
 
+" ### Markdown preview
+" https://github.com/iamcco/markdown-preview.nvim
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
+
 " ## Initialize plugin system
 call plug#end()
 
