@@ -39,7 +39,8 @@ set wildmenu
 " 入力中のコマンドを表示する
 set showcmd
 " クリップボードを使う
-set clipboard+=unnamedplus
+" Disable for registers
+"set clipboard+=unnamedplus
 " always show signcolumns
 set signcolumn=yes
 " dont't give |ins-completion-menu| messages
