@@ -16,5 +16,3 @@
     path = ~/workspace/.gitconfig
 [diff "sopsdiffer"]
     textconv = sops -d
-[credential]
-    helper = osxkeychain
