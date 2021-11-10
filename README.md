@@ -2,21 +2,30 @@
 
 ## rcm
 
-https://thoughtbot.github.io/rcm/
+<https://thoughtbot.github.io/rcm/>
 
 ### lsrc
 
 show list
-https://thoughtbot.github.io/rcm/lsrc.1.html
-```bash
-$ lsrc
+<https://thoughtbot.github.io/rcm/lsrc.1.html>
+
+```console
+lsrc
 ```
 
 ### mkrc
 
 create new
-https://thoughtbot.github.io/rcm/mkrc.1.html
+<https://thoughtbot.github.io/rcm/mkrc.1.html>
 
-```bash
-$ mkrc ${TARGET}
+```console
+mkrc ${TARGET}
+```
+
+### rcup
+
+update and install
+<https://thoughtbot.github.io/rcm/rcup.1.html>
+```console
+env RCRC=$HOME/dotfiles/rcrc rcup
 ```
