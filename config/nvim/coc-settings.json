@@ -25,5 +25,8 @@
   "yaml.schemas": {
     "https://json.schemastore.org/drone": "/.drone.yml",
     "kubernetes": "/*.yaml"
-  }
+  },
+  "cSpell.userWords": [
+    "kubernetes"
+  ]
 }
