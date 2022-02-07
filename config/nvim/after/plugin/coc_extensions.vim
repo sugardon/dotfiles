@@ -12,4 +12,6 @@ let g:coc_global_extensions = [
 \ 'coc-yaml',
 \ 'coc-markdownlint',
 \ 'coc-spell-checker',
+\ 'coc-css',
+\ 'coc-tailwindcss',
 \ ]
