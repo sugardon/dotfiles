@@ -69,4 +69,3 @@ set wrapscan
 "==その他==
 " terminalシェルの指定
 set sh=zsh
-

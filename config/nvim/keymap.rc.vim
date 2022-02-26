@@ -28,5 +28,4 @@ nnoremap <silent> <tab>$ :<c-u>tablast<cr>
 nnoremap <silent> <tab>c :<c-u>tabclose<cr>
 
 " mark
-"nnoremap <silent> <leader>m :<c-u>marks<cr>
 nnoremap <silent> <leader>m :<c-u>CocList marks<cr>

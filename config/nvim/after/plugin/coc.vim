@@ -121,6 +121,4 @@ nnoremap <silent> <leader>l :<c-u>CocList<cr>
 nnoremap <silent> <leader>m :<c-u>CocList marks<cr>
 nnoremap <silent> <leader>h :<c-u>CocList mru<cr>
 nnoremap <silent> <leader>e :<c-u>CocList files<cr>
-"nnoremap <silent> <leader>re :<c-u>CocList registers<cr>
-nnoremap <silent> <leader>re :<c-u>registers<cr>
-
+nnoremap <silent> <leader>re :<c-u>CocList registers<cr>

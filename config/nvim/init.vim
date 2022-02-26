@@ -30,6 +30,3 @@ runtime! ./options.rc.vim
 runtime! ./keymap.rc.vim
 runtime! ./autocmd.rc.vim
 runtime! ./functions.rc.vim
-
-
-
