@@ -104,6 +104,27 @@ hotkeys:
     - - ⌘-Shift-R
     - - Alt-Shift-R
   rename-tab: []
+  copy:
+    - - ⌘-Shift-Y
+    - - Alt-Shift-Y
+  paste:
+    - - ⌘-Shift-P
+    - - Alt-Shift-P
+  zoom-in:
+    - - ⌘-Shift-;
+    - - Alt-Shift-;
+  zoom-out:
+    - - ⌘-Shift--
+    - - Alt-Shift--
+  reset-zoom:
+    - - ⌘-Shift-0
+    - - Alt-Shift-0
+  search:
+    - - ⌘-Shift-F
+    - - Alt-Shift-F
+  pane-focus-all:
+    - - Ctrl-⌘-I
+    - - Ctrl-Alt-I
 serial: {}
 ssh: {}
 appearance:
@@ -115,3 +136,11 @@ enableAnalytics: false
 pluginBlacklist: []
 enableWelcomeTab: false
 clickableLinks: {}
+version: 3
+profiles: []
+configSync:
+  parts: {}
+profileDefaults: {}
+hacks: {}
+docker: {}
+saveOutput: {}
