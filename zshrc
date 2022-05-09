@@ -31,7 +31,6 @@ export EDITOR="nvim"
 ## Basic config
 source $HOME/.zsh/key-bindings.zsh
 source $HOME/.zsh/aliases.zsh
-source $HOME/.zsh/auto-title.zsh
 ## local config
 source $HOME/.zshrc-local.zsh
 
