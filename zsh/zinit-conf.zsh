@@ -15,6 +15,13 @@ zinit ice wait lucid \
            bindkey '^N' history-substring-search-down"
 zinit light zsh-users/zsh-history-substring-search
 
+# https://github.com/lukechilds/zsh-nvm
+export NVM_DIR="$HOME/.nvm"
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
+export NVM_NO_USE=false
+zinit light lukechilds/zsh-nvm
+
 ## local plugins
 # cf. https://github.com/zdharma/zinit/issues/4#issuecomment-308037024
 zinit ice wait'!0' lucid
