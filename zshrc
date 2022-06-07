@@ -33,3 +33,4 @@ source $HOME/.zshrc-local.zsh
 # === starship prompt ===
 export STARSHIP_CONFIG="$HOME/.zsh/starship.toml"
 eval "$(starship init zsh)"
+

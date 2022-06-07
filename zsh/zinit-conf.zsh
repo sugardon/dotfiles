@@ -1,5 +1,12 @@
-# https://github.com/zdharma/zinit
-source $HOME/.zinit/bin/zinit.zsh
+# https://github.com/zdharma-continuum/zinit#install
+# $ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+# $ mkdir -p "$(dirname $ZINIT_HOME)"
+# $ git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+source "${ZINIT_HOME}/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+### End of Zinit's installer chunk
 
 zinit snippet OMZ::lib/history.zsh
 # completions
@@ -24,11 +31,12 @@ zinit ice wait lucid
 zinit light lukechilds/zsh-nvm
 
 # `/zsh/completion`
-zinit wait lucid as"completion" for \
+# https://zdharma-continuum.github.io/zinit/wiki/For-Syntax/
+zinit wait lucid is-snippet as"completion" for \
     $HOME/.zsh/completion/_docker-compose \
     $HOME/.zsh/completion/_ssh
 
-# `/zsh/lazy`
-zinit wait lucid for \
+## `/zsh/lazy`
+zinit wait lucid is-snippet for \
     $HOME/.zsh/lazy/pyenv.zsh \
     $HOME/.zsh/lazy/completion.zsh
