@@ -19,10 +19,6 @@ export PATH="$HOME/local/bin:$PATH"
 # === Plugins ===
 source $HOME/.zsh/zinit-conf.zsh
 
-# === Completion ==
-## completion with file
-fpath=(~/.zsh/fpath/ $fpath)
-
 # === other settings ===
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"

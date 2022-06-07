@@ -7,7 +7,7 @@ zinit light zsh-users/zsh-completions
 zstyle ':completion:*' menu select
 
 zinit light zsh-users/zsh-autosuggestions
-zinit light zdharma/fast-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 
 ## https://github.com/zsh-users/zsh-history-substring-search
 zinit ice wait lucid \
@@ -20,12 +20,15 @@ export NVM_DIR="$HOME/.nvm"
 export NVM_COMPLETION=true
 export NVM_LAZY_LOAD=true
 export NVM_NO_USE=false
+zinit ice wait lucid
 zinit light lukechilds/zsh-nvm
 
-## local plugins
-# cf. https://github.com/zdharma/zinit/issues/4#issuecomment-308037024
-zinit ice wait'!0' lucid
-zinit light $HOME/.zsh/devtools
+# `/zsh/completion`
+zinit wait lucid as"completion" for \
+    $HOME/.zsh/completion/_docker-compose \
+    $HOME/.zsh/completion/_ssh
 
-zinit ice wait'!0' lucid
-zinit light $HOME/.zsh/completions
+# `/zsh/lazy`
+zinit wait lucid for \
+    $HOME/.zsh/lazy/pyenv.zsh \
+    $HOME/.zsh/lazy/completion.zsh
