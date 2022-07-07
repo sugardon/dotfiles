@@ -27,10 +27,10 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> <leader>gd <Plug>(coc-definition)
+nmap <silent> <leader>gt <Plug>(coc-type-definition)
+nmap <silent> <leader>gi <Plug>(coc-implementation)
+nmap <silent> <leader>gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
 "nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -107,7 +107,7 @@ nnoremap <silent> <leader>c  :<C-u>CocList commands<cr>
 nnoremap <silent> <leader>o  :<C-u>CocList outline<cr>
 " Search workspace symbols
 "nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
-nnoremap <silent> <leader>i  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <leader>w  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
 nnoremap <silent> <leader>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
@@ -119,6 +119,7 @@ nnoremap <silent> <leader>r  :<C-u>CocListResume<CR>
 " @see https://github.com/neoclide/coc-lists
 nnoremap <silent> <leader>l :<c-u>CocList<cr>
 nnoremap <silent> <leader>m :<c-u>CocList marks<cr>
-nnoremap <silent> <leader>h :<c-u>CocList mru<cr>
+nnoremap <silent> <leader>er :<c-u>CocList mru<cr>
 nnoremap <silent> <leader>e :<c-u>CocList files<cr>
 nnoremap <silent> <leader>re :<c-u>CocList registers<cr>
+nnoremap <silent> <leader>grep :<c-u>CocList grep<cr>
