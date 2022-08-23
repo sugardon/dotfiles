@@ -1,5 +1,6 @@
 {
   "suggest.timeout": 5000,
+  "suggest.noselect": true,
   "python.jediEnabled": false,
   "languageserver": {
     "ccls": {
