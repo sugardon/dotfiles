@@ -24,10 +24,10 @@ terminal:
       - '#e0e0e0'
   environment: {}
   profile: zsh
-  font: Ricty Diminished
+  font: JetBrainsMono Nerd Font
   cursorBlink: false
   bell: 'off'
-  fallbackFont: JetBrainsMono Nerd Font
+  fallbackFont: UDEV Gothic NF
   fontSize: 16
   alwaysUseWorkingDirectory: false
   background: theme
