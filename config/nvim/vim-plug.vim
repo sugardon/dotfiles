@@ -58,6 +58,10 @@ Plug 'dhruvasagar/vim-table-mode'
 " https://github.com/iamcco/markdown-preview.nvim
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'   }
 
+" ### Rsut
+" https://github.com/rust-lang/rust.vim
+Plug 'rust-lang/rust.vim'
+
 " ## Initialize plugin system
 call plug#end()
 
