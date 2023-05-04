@@ -13,4 +13,5 @@ let g:coc_global_extensions = [
 \ 'coc-markdownlint',
 \ 'coc-spell-checker',
 \ 'coc-css',
+\ 'coc-rust-analyzer',
 \ ]
