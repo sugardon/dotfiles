@@ -33,11 +33,9 @@ zinit light lukechilds/zsh-nvm
 # `/zsh/completion`
 # https://zdharma-continuum.github.io/zinit/wiki/For-Syntax/
 zinit wait lucid is-snippet as"completion" for \
-    $HOME/.zsh/completion/_docker-compose \
-    $HOME/.zsh/completion/_ssh
-
-zinit wait lucid is-snippet as"completion" for \
     atinit"zsh $HOME/.zsh/completions-gen.zsh" \
+    $HOME/.zsh/completion/_docker-compose \
+    $HOME/.zsh/completion/_ssh \
     $HOME/local/share/completions/_*
 
 ## `/zsh/lazy`
