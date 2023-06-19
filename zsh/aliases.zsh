@@ -23,6 +23,7 @@ alias mv='mv -i'
 
 # use nvim
 alias vim='nvim'
-
+# Generate completions
+alias completions-gen="zsh $HOME/.zsh/completions-gen.zsh"
 # Kubernetes
 alias k='kubectl'

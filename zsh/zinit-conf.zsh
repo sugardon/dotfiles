@@ -32,12 +32,14 @@ zinit light lukechilds/zsh-nvm
 
 # `/zsh/completion`
 # https://zdharma-continuum.github.io/zinit/wiki/For-Syntax/
+#
+# COMP_DIR: $HOME/local/share/completions
+# See, completions-gen.zsh
 zinit wait lucid is-snippet as"completion" for \
-    atinit"zsh $HOME/.zsh/completions-gen.zsh" \
     $HOME/.zsh/completion/_docker-compose \
     $HOME/.zsh/completion/_ssh \
     $HOME/local/share/completions/_*
 
 ## `/zsh/lazy`
-zinit wait lucid atload"compinit" is-snippet for \
+zinit wait lucid is-snippet for \
     $HOME/.zsh/lazy/pyenv.zsh
