@@ -36,7 +36,10 @@ zinit wait lucid is-snippet as"completion" for \
     $HOME/.zsh/completion/_docker-compose \
     $HOME/.zsh/completion/_ssh
 
+zinit wait lucid is-snippet as"completion" for \
+    atinit"zsh $HOME/.zsh/completions-gen.zsh" \
+    $HOME/local/share/completions/_*
+
 ## `/zsh/lazy`
-zinit wait lucid is-snippet for \
-    $HOME/.zsh/lazy/pyenv.zsh \
-    $HOME/.zsh/lazy/completion.zsh
+zinit wait lucid atload"compinit" is-snippet for \
+    $HOME/.zsh/lazy/pyenv.zsh
