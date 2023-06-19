@@ -6,3 +6,5 @@ helm completion zsh > $COMP_DIR/_helm
 #source <(skaffold completion zsh)
 #source <(kind completion zsh)
 #source <(stern --completion=zsh)
+
+echo "Generate Completions! at COMP_DIR: $COMP_DIR"
