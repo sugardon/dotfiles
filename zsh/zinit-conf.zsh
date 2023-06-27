@@ -19,7 +19,9 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 ## https://github.com/zsh-users/zsh-history-substring-search
 zinit ice wait lucid \
     atload"bindkey '^P' history-substring-search-up;\
-           bindkey '^N' history-substring-search-down"
+           bindkey '^N' history-substring-search-down;\
+           HISTORY_SUBSTRING_SEARCH_FUZZY=true;\
+           HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=true;"
 zinit light zsh-users/zsh-history-substring-search
 
 # https://github.com/lukechilds/zsh-nvm
