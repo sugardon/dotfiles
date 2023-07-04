@@ -38,6 +38,7 @@ zinit light lukechilds/zsh-nvm
 # COMP_DIR: $HOME/local/share/completions
 # See, completions-gen.zsh
 zinit wait lucid is-snippet as"completion" for \
+    atload"compinit -i" \
     $HOME/.zsh/completion/_docker-compose \
     $HOME/.zsh/completion/_ssh \
     $HOME/local/share/completions/_*
