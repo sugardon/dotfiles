@@ -45,4 +45,5 @@ zinit wait lucid is-snippet as"completion" for \
 
 ## `/zsh/lazy`
 zinit wait lucid is-snippet for \
-    $HOME/.zsh/lazy/pyenv.zsh
+    $HOME/.zsh/lazy/pyenv.zsh \
+    $HOME/.zsh/lazy/go.zsh
