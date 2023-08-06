@@ -46,10 +46,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-" ### lexima | 括弧補完
-" https://github.com/cohama/lexima.vim
-Plug 'cohama/lexima.vim'
-
 " ### vim table mode
 " https://github.com/dhruvasagar/vim-table-mode
 Plug 'dhruvasagar/vim-table-mode'
