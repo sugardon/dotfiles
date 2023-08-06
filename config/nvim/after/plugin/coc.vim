@@ -143,3 +143,7 @@ nnoremap <silent> <leader>er :<c-u>CocList mru<cr>
 nnoremap <silent> <leader>e :<c-u>CocList files<cr>
 nnoremap <silent> <leader>re :<c-u>CocList registers<cr>
 nnoremap <silent> <leader>grep :<c-u>CocList grep<cr>
+
+" coc-pairs plugin
+" https://github.com/neoclide/coc-pairs
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm(): "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"

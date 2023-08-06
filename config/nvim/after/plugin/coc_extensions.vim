@@ -14,4 +14,5 @@ let g:coc_global_extensions = [
 \ 'coc-spell-checker',
 \ 'coc-css',
 \ 'coc-rust-analyzer',
+\ 'coc-pairs',
 \ ]
