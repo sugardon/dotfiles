@@ -24,6 +24,11 @@ zinit ice wait lucid \
            HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=true;"
 zinit light zsh-users/zsh-history-substring-search
 
+# fzf
+# https://github.com/junegunn/fzf
+# key-bindings
+zinit snippet https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
+
 # https://github.com/lukechilds/zsh-nvm
 export NVM_DIR="$HOME/.nvm"
 export NVM_COMPLETION=true
