@@ -15,10 +15,10 @@ keymap("", "<C-k>", "<C-w>k", defaultOpts)
 keymap("", "<C-l>", "<C-w>l", defaultOpts)
 
 -- Shift + 矢印でウィンドウサイズを変更
-keymap("", "<C-Left>", "<C-w><", defaultOpts)
-keymap("", "<C-Right>", "<C-w>>", defaultOpts)
-keymap("", "<C-Up>", "<C-w>-", defaultOpts)
-keymap("", "<C-Down>", "<C-w>+", defaultOpts)
+keymap("", "<S-Left>", "<C-w><", defaultOpts)
+keymap("", "<S-Right>", "<C-w>>", defaultOpts)
+keymap("", "<S-Up>", "<C-w>-", defaultOpts)
+keymap("", "<S-Down>", "<C-w>+", defaultOpts)
 
 -- buffer
 keymap("", "<leader>b", ":b #<Enter>", defaultOpts)
