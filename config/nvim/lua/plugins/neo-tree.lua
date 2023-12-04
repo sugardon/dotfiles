@@ -5,7 +5,7 @@ return {
     cmd = "Neotree",
     keys = {
       {
-        "<leader>tt",
+        "<leader>ee",
         "<cmd>Neotree toggle<cr>",
         desc = "Explorer NeoTree (root dir)",
       },
