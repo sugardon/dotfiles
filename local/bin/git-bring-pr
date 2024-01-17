@@ -2,5 +2,9 @@
 
 set -ex
 
-git fetch $1 pull/$2/head:pr-$2
+if [ "$(git show-ref refs/heads/pr-$2)" ]; then
+	git pull $1 pull/$2/head:pr-$2
+else
+	git fetch $1 pull/$2/head:pr-$2
+fi
 git switch pr-$2
