@@ -1,0 +1,9 @@
+#compdef aws-profile
+
+_aws_profile() {
+  # https://zsh.sourceforge.io/Doc/Release/Expansion.html#Parameter-Expansion-Flags
+  cmds=( ${(uf)"$(aws configure list-profiles)"} )
+  _values "profiles" $cmds
+}
+
+compdef _aws_profile aws-profile

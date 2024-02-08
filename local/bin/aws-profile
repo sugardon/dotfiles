@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# 例
+# aws-profile <profile_name> <region>
+
+#set -ex
+
+INPUT_PROFILE=$1
+aws configure list-profiles | grep -xq $INPUT_PROFILE
+if [ $? -ne 0 ]; then
+	echo "profile: $INPUT_PROFILE not found"
+	echo "--All available profiles--"
+	aws configure list-profiles
+else
+	echo "Switching to profile: $INPUT_PROFILE"
+	export AWS_PROFILE="$INPUT_PROFILE"
+fi
