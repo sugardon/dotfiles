@@ -44,8 +44,7 @@ zinit light lukechilds/zsh-nvm
 # See, completions-gen.zsh
 zinit wait lucid is-snippet as"completion" for \
     atload"compinit -i" \
-    $HOME/.zsh/completion/_docker-compose \
-    $HOME/.zsh/completion/_ssh \
+    $HOME/.zsh/completion/* \
     $HOME/local/share/completions/_*
 
 ## `/zsh/lazy`
