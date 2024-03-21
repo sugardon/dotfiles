@@ -1,5 +1,9 @@
 local opt = vim.opt
 
+-- <leader>
+vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+vim.g.maplocalleader = " " -- Same for `maplocalleader`
+
 opt.autoread = true
 opt.backup = false -- creates a backup file
 -- opt.clipboard = "unnamedplus" -- don't use clipboard
