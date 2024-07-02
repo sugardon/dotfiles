@@ -3,6 +3,7 @@ local opt = vim.opt
 -- <leader>
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 vim.g.maplocalleader = " " -- Same for `maplocalleader`
+vim.g.autoformat = false
 
 opt.autoread = true
 opt.backup = false -- creates a backup file
