@@ -1,16 +1,30 @@
-#!/bin/sh
-
-# 例
-# aws-profile <profile_name> <region>
+#!/bin/bash
 
 #set -ex
+
+if [[ $# -ne 1 ]]; then
+
+  cat <<EOF
+
+ERROR: $0 <profile_name>
+
+- profile_name : aws profile name
+
+Example:
+
+$0 aws-profile <profile_name>
+
+EOF
+  exit 1
+fi
 
 INPUT_PROFILE=$1
 aws configure list-profiles | grep -xq $INPUT_PROFILE
 if [ $? -ne 0 ]; then
-	echo "profile: $INPUT_PROFILE not found"
+  echo "ERROR: profile $INPUT_PROFILE not found"
 	echo "--All available profiles--"
 	aws configure list-profiles
+  exit 1
 else
 	echo "Switching to profile: $INPUT_PROFILE"
 	export AWS_PROFILE="$INPUT_PROFILE"
