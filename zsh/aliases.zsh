@@ -23,8 +23,6 @@ alias mv='mv -i'
 
 # use nvim
 alias vim='nvim'
-# Generate completions
-alias completions-gen="zsh $HOME/.zsh/completions-gen.zsh"
 # Benchmark
 alias zshbench="for i in \$(seq 1 10); do time zsh -i -c exit > /dev/null ; done"
 # Kubernetes

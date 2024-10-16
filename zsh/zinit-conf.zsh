@@ -40,12 +40,10 @@ zinit light lukechilds/zsh-nvm
 # `/zsh/completion`
 # https://zdharma-continuum.github.io/zinit/wiki/For-Syntax/
 #
-# COMP_DIR: $HOME/local/share/completions
-# See, completions-gen.zsh
-zinit wait lucid is-snippet as"completion" for \
-    atload"compinit -i" \
-    $HOME/.zsh/completion/* \
-    $HOME/local/share/completions/_*
+# Generate completion script: ~/local/bin/completions-gen
+zinit wait lucid is-snippet atload"compinit -i" as"completion" for \
+    $HOME/.zsh/completion/_* \
+    $HOME/.zsh/completion-autogen/_*
 
 ## `/zsh/lazy`
 zinit wait lucid is-snippet for \
