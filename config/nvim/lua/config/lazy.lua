@@ -26,7 +26,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.clangd" },
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
-    { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.ai.copilot" },
     -- vscode
     { import = "lazyvim.plugins.extras.vscode" },
     -- { import = "lazyvim.plugins.extras.lang.json" },
