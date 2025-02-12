@@ -1,3 +1,4 @@
+language: en-US
 terminal:
   searchOptions: {}
   colorScheme:
@@ -24,10 +25,9 @@ terminal:
       - '#e0e0e0'
   environment: {}
   profile: zsh
-  font: JetBrainsMono Nerd Font
+  font: Moralerspace Neon NF
   cursorBlink: false
   bell: 'off'
-  fallbackFont: UDEV Gothic NF
   fontSize: 16
   alwaysUseWorkingDirectory: false
   background: theme
@@ -132,6 +132,7 @@ appearance:
   opacity: 1
   frame: thin
   vibrancy: false
+  tabsInFullscreen: true
 enableAnalytics: false
 pluginBlacklist: []
 enableWelcomeTab: false
