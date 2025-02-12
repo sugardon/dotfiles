@@ -1,5 +1,25 @@
 # dotfiles
 
+## Usage
+
+1. Check requirements
+
+    ```console
+    just before-setup
+    ```
+
+1. rcup
+
+    ```console
+    env RCRC=$HOME/dotfiles/rcrc rcup
+    ```
+
+1. Option : Check optional tools
+
+    ```
+    just optional-tools
+    ```
+
 ## rcm
 
 <https://thoughtbot.github.io/rcm/>
@@ -32,11 +52,4 @@ env RCRC=$HOME/dotfiles/rcrc rcup
 
 ## zinit
 
-1. Install zinit
-   <https://github.com/zdharma-continuum/zinit>
-1. Setup
-   ```bash
-   ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-   mkdir -p "$(dirname $ZINIT_HOME)"
-   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-   ```
+After setup `rcm`, `zinit` will install automatically. See `zsh/zinit-conf.zsh`.
