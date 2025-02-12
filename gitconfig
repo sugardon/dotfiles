@@ -12,8 +12,6 @@
     gpgsign = true
 [push]
     default = nothing
-[includeIf "gitdir:~/workspace/"]
-    path = ~/workspace/.gitconfig
 [includeIf "gitdir:~/github.com-ent/"]
     path = ~/github.com-ent/.gitconfig
 [diff "sopsdiffer"]
