@@ -111,8 +111,8 @@ hotkeys:
     - - ⌘-Shift-P
     - - Alt-Shift-P
   zoom-in:
-    - - ⌘-Shift-;
-    - - Alt-Shift-;
+    - - ⌘-Shift-=
+    - - Alt-Shift-=
   zoom-out:
     - - ⌘-Shift--
     - - Alt-Shift--
