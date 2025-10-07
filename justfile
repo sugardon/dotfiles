@@ -10,6 +10,13 @@ required-tools:
     [[ $(starship -V) ]] && echo "✅ Success : starship insntalled"
     [[ $(nvim -v) ]] && echo "✅ Success : nvim installed"
     [[ $(fzf --version) ]] && echo "✅ Success : fzf installed"
+    # tree-sitter-cli
+    if [[ $(tree-sitter --version) ]]; then
+      echo "✅ Success : tree-sitter-cli installed"
+    else
+      echo "❌ failed : tree-sitter-cli is required to nvim-treesitter"
+      echo "https://github.com/nvim-treesitter/nvim-treesitter"
+    fi
 
 # Check optional-tools installed.
 optional-tools:
