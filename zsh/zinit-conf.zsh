@@ -7,26 +7,26 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
-zinit snippet OMZ::lib/history.zsh
-# completions
-zinit light zsh-users/zsh-completions
-zstyle ':completion:*' menu select
-
-zinit light zsh-users/zsh-autosuggestions
-zinit light zdharma-continuum/fast-syntax-highlighting
-
+zinit lucid for OMZ::lib/history.zsh
+zinit lucid \
+    atload"zstyle ':completion:*' menu select" \
+    light-mode for zsh-users/zsh-completions
+zinit lucid for zsh-users/zsh-autosuggestions
+zinit lucid for zdharma-continuum/fast-syntax-highlighting
 ## https://github.com/zsh-users/zsh-history-substring-search
-zinit ice wait lucid \
+zinit wait lucid \
     atload"bindkey '^P' history-substring-search-up;\
            bindkey '^N' history-substring-search-down;\
            HISTORY_SUBSTRING_SEARCH_FUZZY=true;\
-           HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=true;"
-zinit light zsh-users/zsh-history-substring-search
+           HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=true;" \
+    light-mode for zsh-users/zsh-history-substring-search
 
 # fzf
 # https://github.com/junegunn/fzf
 # key-bindings
-zinit snippet https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
+zinit wait"1" lucid is-snippet for https://github.com/junegunn/fzf/blob/master/shell/key-bindings.zsh
+
+zinit wait"2" lucid for OMZP::aws
 
 # https://github.com/lukechilds/zsh-nvm
 export NVM_DIR="$HOME/.nvm"
@@ -40,11 +40,11 @@ zinit light lukechilds/zsh-nvm
 # https://zdharma-continuum.github.io/zinit/wiki/For-Syntax/
 #
 # Generate completion script: ~/local/bin/completions-gen
-zinit wait lucid is-snippet atload"compinit -i" as"completion" for \
+zinit wait"3" lucid is-snippet atload"compinit -i" as"completion" for \
     $HOME/.zsh/completion/_* \
     $HOME/.zsh/completion-autogen/_*
 
 ## `/zsh/lazy`
-zinit wait lucid is-snippet for \
+zinit wait"3" lucid is-snippet for \
     $HOME/.zsh/lazy/pyenv.zsh \
     $HOME/.zsh/lazy/go.zsh
